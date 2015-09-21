@@ -1,5 +1,3 @@
-angular.module('starter')
-
 .directive('volumeModule', function() {
     return {
         restrict: 'E',
@@ -56,10 +54,6 @@ angular.module('starter')
             scope.audioSource.addEventListener('canplaythrough', function() {
                 scope.initAudio(scope.barColor, scope.audioSource, scope.barSpacing, scope.barAmount);
             }, false);
-
-
-
-
         }
     }
 });
